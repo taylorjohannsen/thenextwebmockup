@@ -1,0 +1,739 @@
+#imgAnimate {
+    height: 210x;
+    width: 900px;
+}
+.ad {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+body {
+    margin: 0;
+}
+.topBlackBar {
+    display: flex; 
+    background-color: #131313;
+}
+.aFont {
+    text-decoration: none;
+    color: hsla(0,0%,100%,.6);
+    padding-right: 10px;
+    font-family: Arial;
+    font-size: 13px;
+}
+.divFont {
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.aFont:hover {
+    color: #fff;
+}
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropDown {
+    position: relative;
+    display: inline-block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.dropContent a {
+    color: hsla(0,0%,100%,.6);
+    padding-left: 10px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-bottom: 1px solid rgba(146, 145, 145, 0.568);
+    text-decoration: none;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+}
+.dropDown:hover .dropContent {
+    display: block;
+}
+.hFont {
+    color: #aaa;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: 'Ropa Sans';
+    text-decoration: none;
+}
+.headerLeft {
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.hFont:hover {
+    color: #131313;
+}
+.headerRight {
+    float: right;
+    padding-top: 15px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid rgba(185, 185, 185, 0.322);
+
+}
+.startsIn {
+    padding-top: 7px;
+    font-family: 'Ropa Sans';
+    font-size: 14px;
+}
+.border {
+    padding-left: 13px;
+    padding-right: 10px;
+    margin-left: 0;
+}
+#countDown {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #f42;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.yellowBar {
+    background-color: #fd3;
+    padding-top: 0;
+}
+.freeTicket {
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-family: Arial;
+    font-size: 13px;
+}
+.content {
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 10px black;
+}
+.sticky + .content {
+    padding-top: 20px;
+}
+.yFont {
+    text-decoration: none;
+}
+#hiddenLogo {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 54px;
+    width: 107px;
+}
+.padTop {
+    padding-top: 18px;
+}
+.nav {
+    background-color: white;
+    z-index: 10;
+    box-shadow: 10px 10px 50px rgba(121, 121, 121, 0.438); 
+}
+.leftPictures {
+    position: relative;
+    width: 67%;
+    min-height: 400px;
+    max-height: 545px;
+    background: url(./photos/bigstory.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+}
+.leftPictures:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(255, 77, 77), black);
+    opacity: 0.6;
+    transition: all 0.7s ease;
+}
+.leftPictures:hover:after {
+    transition: all 0.7s ease;
+    filter: brightness(200%);
+}
+.rightPictures {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 33%;
+    margin-left: 8px;
+    margin-right: 7px;
+}
+.storyOne {
+    min-height: 270px;
+    background: url(./photos/darkphone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.7s ease;
+    background-position-x: 50%;
+    background-position-y: center;
+    position: relative;
+}
+
+.storyOne:hover {
+    transition: all 0.7s ease;
+    background: url(./photos/phone1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.7s ease;
+    background-position-x: 50%;
+    background-position-y: center;
+
+}
+.storyTwo {
+    margin-top: 8px;
+    min-height: 267px;
+    background: url(./photos/darkmoon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+    transition: all 0.7s ease;
+}
+.storyTwo:hover {
+    transition: all 0.7s ease;
+    background: url(./photos/moon.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+.topPictures {
+    padding-top: 2px;
+    width: 100%;
+    display: flex;
+}
+.picturesChange:hover {
+    transition: all 0.7s ease;
+    filter: brightness(130%);
+}
+.test {
+    color: white;
+}
+.gradient {
+    position: relative;
+    padding-left: 20px;
+    z-index: 1;
+    line-height: 1.2;
+}
+.Logo {
+    padding-top: 20px;
+    height: 30%;
+    width: 30%;
+    float: left;
+}
+#brightText {
+    color: white;
+}
+.whiteDate {
+    padding-top: 20px;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    float: right;
+    padding-right: 20px;
+    letter-spacing: 2;
+}
+.tech {
+    font-family: 'Ropa Sans';
+    color: white;
+    clear: left;
+    padding-top: 280px;
+}
+.tech2 {
+    font-family: 'Ropa Sans';
+    color: white;
+    clear: left;
+}
+.world {
+    font-size: 56px;
+    font-family: 'Yantramanav';
+    color: white;
+    font-weight: 700;
+    padding-top: 0;
+}
+.world2 {
+    font-size: 30px;
+    font-family: 'Yantramanav';
+    color: white;
+    font-weight: 700;
+    padding-top: 0;
+}
+.Author {
+    color: rgb(129, 112, 112);
+    font-family: 'Yantramanav';
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.Author2 {
+    color: rgb(129, 112, 112);
+    font-family: 'Yantramanav';
+    font-size: 12px;
+    font-weight: bold;
+}
+.position {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+.mainMargins {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+.latestNews {
+    color: #f42;
+    font-weight: 800;
+    line-height: 1.1;
+    font-family: 'Yantramanav';
+    font-size: 28px;
+}
+.latestNews:hover {
+    color: black;
+}
+.dFlex {
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.boxContainer {
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.heightWidth {
+    height: 135px;
+    width: 270px;
+}
+.blackText {
+    font-family: 'Yantramanav';
+    font-weight: 700;
+    font-size: 18px;
+    width: 270px;
+    color: black;
+}
+.blackText:hover {
+    color: #f42;
+}
+.lFont {
+    text-decoration: none;
+}
+.lFont:hover {
+    text-decoration: underline;
+    text-decoration-color: #aaa;
+}
+.whiteText {
+    padding-top: 5px;
+    font-family: 'Yantramanav';
+    font-weight: 400;
+    font-size: 15px;
+    color: #aaa;
+}
+.nFont {
+    text-decoration: none;
+    color: #aaa;
+}
+.nFont:hover {
+    color: black;
+}
+.latestNews {
+    float: left;
+}
+.addInfoFlex {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.addInfo {
+    color: #f42;
+    font-size: 18px;
+    clear: left;
+    padding-left: 5px;
+    font-family: 'Yantramanav';
+    font-weight: 300;
+}
+.addInfo:hover {
+    color: black;
+}
+.floatLeft {
+    float: left;
+    padding-right: 10px;
+    z-index: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 65px;
+    width: 65px;
+}
+.floatRight {
+    margin-left: 10px;
+    clear: right;
+    width: 270px;
+}
+.bFlex {
+    display: flex; 
+    flex-direction: row;
+    padding-top: 10px;
+    background-color: rgba(255,68,34,.02);
+    width: 270px;
+}
+.compName {
+    color: white;
+    background-color: #f42;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Yantramanav';
+    font-weight: 700;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.money {
+    color: black;
+    background-color: rgba(255,68,34,.07);
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Yantramanav';
+    font-weight: 700;
+    padding-top: 7px;
+}
+.skinnyText {
+    font-family: 'Ropa Sans';
+    color: rgb(95, 95, 95);
+    background-color: rgba(255,68,34,.07);
+    padding-bottom: 10px;
+    font-size: 13px;
+
+}
+.padPic {
+    float: left;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+.softText {
+    color: #555;
+    font-family: 'Yantramanav';
+    padding-top: 2px;
+    font-size: 15px;
+}
+.softText:hover {
+    color: black;
+}
+.botBorder {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+}
+.underBorder {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: #555;
+    font-size: 12px;
+    line-height: 2;
+    font-family: 'Yantramanav';
+    min-height: 95px;
+}
+.blue {
+    color: #aaa;
+}
+.listStory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.newsContainer {
+    flex-direction: column;
+    width: 33%;
+}
+.bitCoin {
+    padding-top: 15px;
+    width: 99%;
+    height: auto;
+}
+.padFork {
+    margin-top: 60px;
+}
+.orangeText {
+    color: #f42;
+    font-size: 17px;
+    font-family: 'Yantramanav';
+    font-weight: 700;
+    padding-left: 15px;
+    width: 85%;
+}
+.fFont {
+    text-decoration: none;
+    color: inherit;
+}
+.fFont:hover {
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
+}
+.theLatest {
+    color: #f42;
+    font-size: 15px;
+    font-family: 'Ropa Sans';
+    padding-top: 8px;
+    padding-left: 15px;
+}
+.orangeCont {
+    background-color: rgba(255,68,34,.06);
+    height: 100px;
+    display: flex;
+    width: 97.5%;
+    flex-direction: row;
+}
+.floatCont {
+    flex-direction: column;
+}
+.listStory {
+    margin-bottom: 30px;
+}
+.List {
+    padding-top: 0;
+    border-top: 0;
+    margin-top: 0;
+}
+.dotListStyle {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 0;
+}
+.listText {
+    font-family: 'Yantramanav';
+    color: #555;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(90, 90, 90, 0.205);
+    padding-top: 10px;
+}
+.pFont {
+    text-decoration: none;
+}
+.listText:hover {
+    color: black;
+}
+.bottomAds {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.adCont {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 23%;
+}
+.Adds {
+    flex-direction: column;
+}
+.priceCont {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+.adName {
+    padding-top: 8px;
+    color: black;
+    font-weight: 700;
+    font-family: 'Yantramanav';
+    font-size: 18px;
+    width: 98%;
+    padding-bottom: 0;
+}
+.adName:hover {
+    color: #f42;
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+.smallPrice {
+    padding-right: 7px;
+    text-decoration: line-through;
+    color: rgb(134, 134, 134);
+    font-family: 'Arial';
+    font-size: 15px;
+    padding-top: 3px;
+}
+.bigPrice {
+    font-family: 'Yantramanav';
+    font-size: 18px;
+    color: rgba(46, 46, 46, 0.767);
+}
+.footer {
+    background-color: #131313;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+.footCont {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+.credit {
+    background-color: black;
+    width: 100%;
+    height: 95px;
+    color: #aaa;
+    font-family: 'Yantramanav';
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 45px;
+}
+.footLinks {
+    color: #aaa;
+    font-family: 'Ropa Sans';
+    padding-right: 13px;
+    font-size: 14px;
+    text-align: center;
+}
+.center {
+    justify-content: center;
+    padding-top: 30px;
+}
+.lastText {
+    color: #f42;
+    padding-left: 3px;
+}
+.pad {
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.footLinks:hover {
+    color: white;
+}
+.adImg {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .hFont {
+        padding-right: 2px;
+        font-size: 13px;
+    }
+    .picturesChange {
+        height: 100%;
+        width: 100%;
+    }
+    .mainMargins {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .heightWidth {
+        height: 120px;
+        width: 240px;
+    }
+    .blackText {
+        width: 240px;
+    }
+    .topContainer {
+        width: 240px;
+    }
+    .floatRight {
+        width: 240px;
+    }
+    .underBorder {
+        width: 200px;
+    }
+    .bFlex {
+        width: 240px;
+    }
+    .bitCoin {
+        height: auto;
+        width: 100%;
+    }
+    .orangeCont {
+        height: 120px;
+    }
+    .adImg {
+        width: 100%;
+        height: auto;
+    }
+    .adName {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .headerRight {
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    .hFont {
+        padding-right: 0;
+        margin-right: 0;
+        font-size: 12px;
+        padding-left: 3px;
+    }
+    .headerLeft {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+    }
+    .startsIn {
+        display: none;
+    }
+    .tech {
+        padding-top: 200px;
+    }
+    .heightWidth {
+        height: 100px;
+        width: 210px;
+    }
+    .blackText {
+        width: 210px;
+    }
+    .topContainer {
+        width: 200px;
+    }
+    .floatRight {
+        width: 200px;
+    }
+    .underBorder {
+        width: 200px;
+    }
+    .bFlex {
+        width: 200px;
+    }
+}
